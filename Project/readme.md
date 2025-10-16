@@ -78,6 +78,7 @@ Run three passes to obtain outputs for each modality condition. Save outputs as 
 4. Group by MaFI
 - Define Low / Medium / High levels based on three equal-frequency divisions derived from the MaFI database.
 ![Distribution of MaFI Scores in MaFI Database](assets/MaFIDatabase.png)
+<img src="assets/MaFIDatabase.png" width="50%" />
 - Ensure each dataset’s MaFI distribution matches the MaFI database distribution, e.g., via resampling so the proportion in each group mirrors the database.
   
 5. Analysis
