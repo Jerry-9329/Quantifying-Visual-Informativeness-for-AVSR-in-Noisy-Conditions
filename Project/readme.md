@@ -127,7 +127,7 @@ ent SNR Levels (Ranging from -25 dB to 15 dB) in LRS2 Test, LRS3 Test, and LRS2 
   <em>Figure 5. Comparison of Audio-Only and Audio-Visual Modes Performance across MaFI Groups on the LRS2 Test, LRS3 Test, and LRS2 Training Set under Different SNR Conditions (Ranging from -15 dB to 15 dB) </em>
 </p>
 
-- Optionally, run viseme-level or speaker-cohort analyses (e.g., lip speakers vs volunteers).
+- Optionally, run viseme-level or speaker-cohort analyses (e.g., lip speakers vs volunteers). Here only display viseme-level analyses.
 
 <p align="center">
   <img src="assets/VisemeFeature.jpg" width="400">
