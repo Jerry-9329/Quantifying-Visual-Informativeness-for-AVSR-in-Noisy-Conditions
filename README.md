@@ -7,9 +7,9 @@ This project provides a collection of Python scripts designed for comprehensive 
 ## Project Structure
 
 ### Main Directories and Files:
-- av_hubert: Files sourced from the official AV-HuBERT repository (https://github.com/facebookresearch/av_hubert).
-* MaFI: Files sourced from the official AV-HuBERT dataset (https://osf.io/mna8j/).
-+ Project: Scripts and data used for analysis, processing, and experimentation within this project.
+- av_hubert(./av_hubert): Files sourced from the official AV-HuBERT repository (https://github.com/facebookresearch/av_hubert).
+* MaFI(./MaFI): Files sourced from the official AV-HuBERT dataset (https://osf.io/mna8j/).
++ Project(./Project): Scripts and data used for analysis, processing, and experimentation within this project.
 
 ### Python Scripts Description in Project:
 - BoxPlot_Bootstrapping file:
