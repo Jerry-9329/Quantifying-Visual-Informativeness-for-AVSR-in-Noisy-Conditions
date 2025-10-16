@@ -34,6 +34,7 @@ The environment for executing these scripts should follow the official guideline
 To set up the environment:
 
 ```sh
+cd av_hubert
 pip install -r requirements.txt
 ```
 
