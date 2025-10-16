@@ -1,4 +1,4 @@
-# Quantifying Visual Informativeness for AVSR in Noisy Conditions: Insights from AV-HuBERT and MaFI Matrics
+# Quantifying Visual Informativeness for AVSR in Noisy Conditions: Insights from AV-HuBERT and MaFI Metrics
 
 ## Introduction
 
