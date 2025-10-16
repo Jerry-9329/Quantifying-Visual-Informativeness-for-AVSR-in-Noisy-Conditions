@@ -11,7 +11,7 @@ This folder documents how visual informativeness (MaFI) influences audio-visual 
 - [4. Model & Inference Setup](#4-model--inference-setup)
 - [5. Metrics & Grouping](#5-metrics--grouping)
 - [6. Reproduction Guide](#6-reproduction-guide)
-- [7. Key Findings](#7-key-findings-high-level)
+- [7. Key Findings](#7-key-findings)
 - [8. License & Acknowledgments](#8-license--acknowledgments)
 
 ---
@@ -77,39 +77,48 @@ Run three passes to obtain outputs for each modality condition. Save outputs as 
   
 4. Group by MaFI
 - Define Low / Medium / High levels based on three equal-frequency divisions derived from the MaFI database.
+
 <p align="center">
   <img src="assets/MaFIDatabase.png" width="400">
   <br>
   <em>Figure 1. Distribution of MaFI Scores in the MaFI Database</em>
 </p>
+
 - Ensure each dataset’s MaFI distribution matches the MaFI database distribution, e.g., via resampling so the proportion in each group mirrors the database.
+
 <p align="center">
-  <img src="assets/Distribution_Resample.png" width="400">
+  <img src="assets/Distribution_Resample.jpg" width="400">
   <br>
   <em>Figure 2. Distribution of MaFI Scores in Resampled Different Dataset (LRS2 Test Set, LRS3 Test Set, LRS2 Training Set, Lip Speakers and Volunteers in TCD-TIMIT, and Overlapping Words Between Lip Speakers and Volunteers in TCD-TIMIT)</em>
 </p>
 
   
 5. Analysis
-- Correlate MaFI vs IWER under different SNRs and modalities.
+- Correlate MaFI vs IWER under different SNRs and modalities
+  
   - IWER distribution across MaFI groups
-    <p align="center">
-  <img src="assets/LRS2_Test_Box.png" width="30%">
-  <img src="assets/LRS3_Test_Box.png" width="30%">
-  <img src="assets/IWER_LRS2_Training.png" width="30%">
-  <br>
-  <em>Figure 3. Distribution of IWER across MaFI Groups under SNRs Conditions -15 dB, 0 dB, 15 dB for Audio-Visual Mode and in Visual-Only Mode on LRS2 Test, LRS3 Test, and LRS2 Training Set </em>
-</p>
-  - Correlation analysis between MaFI and IWER
+
   <p align="center">
-  <img src="assets/LRS2_Test_Pearson.png" width="30%">
-  <img src="assets/LRS3_Test_Pearson.png" width="30%">
-  <img src="assets/LRS2_Training_Pearson.png" width="30%">
-  <br>
-  <em>Figure 4. Pearson Correlation between MaFI and IWER in Audio-Visual Mode under Differ-
+    <img src="assets/LRS2_Test_Box.png" width="30%">
+    <img src="assets/LRS3_Test_Box.png" width="30%">
+    <img src="assets/IWER_LRS2_Training.png" width="30%">
+    <br>
+    <em>Figure 3. Distribution of IWER across MaFI Groups under SNRs Conditions -15 dB, 0 dB, 15 dB for Audio-Visual Mode and in Visual-Only Mode on LRS2 Test, LRS3 Test, and LRS2 Training Set </em>
+  </p>
+
+  - Correlation analysis between MaFI and IWER
+  
+  <p align="center">
+    <img src="assets/LRS2_Test_Pearson.png" width="30%">
+    <img src="assets/LRS3_Test_Pearson.png" width="30%">
+    <img src="assets/LRS2_Train_Pearson.png" width="30%">
+    <br>
+    <em>Figure 4. Pearson Correlation between MaFI and IWER in Audio-Visual Mode under Differ-
 ent SNR Levels (Ranging from -25 dB to 15 dB) in LRS2 Test, LRS3 Test, and LRS2 Traning Set </em>
-</p>
-- Report effective SNR gains for audio+video vs audio.
+  </p>
+
+- Report effective SNR gains for audio+video vs audio
+  
 <p align="center">
   <img src="assets/LRS2_SNR_Gain.png" width="30%">
   <img src="assets/LRS3_SNR_Gain.png" width="30%">
@@ -117,12 +126,15 @@ ent SNR Levels (Ranging from -25 dB to 15 dB) in LRS2 Test, LRS3 Test, and LRS2 
   <br>
   <em>Figure 5. Comparison of Audio-Only and Audio-Visual Modes Performance across MaFI Groups on the LRS2 Test, LRS3 Test, and LRS2 Training Set under Different SNR Conditions (Ranging from -15 dB to 15 dB) </em>
 </p>
+
 - Optionally, run viseme-level or speaker-cohort analyses (e.g., lip speakers vs volunteers).
+
 <p align="center">
-  <img src="assets/VisemeFeature.png" width="400">
+  <img src="assets/VisemeFeature.jpg" width="400">
   <br>
   <em>Figure 6. Mean MaFI scores for viseme features. Note: “Other” represents the intercept (i.e., reference level) and refers to all words that do not contain the informative features </em>
 </p>
+
 <p align="center">
   <img src="assets/LRS2_Train_Viseme.png" width="400">
   <br>
