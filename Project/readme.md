@@ -113,8 +113,7 @@ Run three passes to obtain outputs for each modality condition. Save outputs as 
     <img src="assets/LRS3_Test_Pearson.png" width="30%">
     <img src="assets/LRS2_Train_Pearson.png" width="30%">
     <br>
-    <em>Figure 4. Pearson Correlation between MaFI and IWER in Audio-Visual Mode under Differ-
-ent SNR Levels (Ranging from -25 dB to 15 dB) in LRS2 Test, LRS3 Test, and LRS2 Traning Set </em>
+    <em>Figure 4. Pearson Correlation between MaFI and IWER in Audio-Visual Mode under Different SNR Levels (Ranging from -25 dB to 15 dB) in LRS2 Test, LRS3 Test, and LRS2 Traning Set </em>
   </p>
 
 - Report effective SNR gains for audio+video vs audio
