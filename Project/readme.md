@@ -53,7 +53,7 @@ Run three passes to obtain outputs for each modality condition. Save outputs as 
 
 ## 5. Metrics & Grouping
 -	**MaFI (Mouth & Facial Informativeness)**:
-  A word-level visual informativeness score (higher = more visually informative/easier to lipread). The study partitions words into Low / Medium / High groups using dataset-appropriate thresholds.
+  A word-level visual informativeness score (higher = more visually informative/easier to lipread). Words are partitioned into **Low / Medium / High** by equal-frequency tertiles derived from the MaFI database (kept fixed across datasets for comparability).
 - **IWER (Individual Word Error Rate)**:
   Word-level error derived from Levenshtein alignment (typically counting substitutions + deletions; include words that appear ≥ 6 times for stability).
 - **Effective SNR Gain**:
